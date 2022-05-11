@@ -1,0 +1,138 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #EEEEEE;
+
+}
+
+.container {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+/* ? header style */
+.header {
+	width: 100%;
+	height: 10%;
+	border-radius: 0 0 15px 15px;
+	background-color: #548CA8;
+	opacity: 0.8;
+}
+
+.header__info {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.header__title {
+	text-align: center;
+	width: 100%;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #334257;
+}
+
+.header__subtitle {
+	width: 100%;
+	text-align: center;
+}
+
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	font-weight: normal;
+	color: #334257;
+}
+
+.main {
+	height: 80%;
+}
+
+.slider {
+	border: 1px solid #334257;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider__body {
+	width: 80%;
+	height: 70%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.slider__btn {}
+
+.slider__item {}
+
+.item1 {}
+
+.item2 {}
+
+.item3 {}
+
+.item4 {}
+
+.item5 {}
+
+.item6 {}
+
+.slider__navigation {
+	width: 45%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 15px;
+}
+
+.slider__bar {
+	display: block;
+	height: 10px;
+	width: 13%;
+	background-color: #548CA8;
+	opacity: 0.7;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+
+.slider__bar:hover {
+	transform: scale(1.2);
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.footer {
+	width: 100%;
+	height: 10%;
+	background-color: #548CA8;
+	opacity: 0.8;
+	border-radius: 15px 15px 0 0;
+}
+
+
+.footer__info {}
+
+.rs-logo {}
+
+.rs-logo__link {}
+
+.footer__year {}
+
+.socials {}
+
+.socials__inst {}
+
+.socials__fb {}
+
+.socials__tg {}
