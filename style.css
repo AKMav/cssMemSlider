@@ -57,60 +57,123 @@
 	height: 80%;
 }
 
-.slider {
-	border: 1px solid #334257;
-	height: 100%;
+.container-main {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.slider__body {
-	width: 80%;
-	height: 70%;
-	border: 1px solid black;
+.slider__wrapper {
+	box-shadow: 0px 0px 15px 1px #548CA8;
+	box-sizing: border-box;
 	border-radius: 10px;
+	margin: 0 auto;
+	height: 550px;
+	width: 800px;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.slider__btn {}
+.slides {
+	width: 600%;
+	height: 90%;
+	border-radius: 10px;
+	display: flex;
+}
 
-.slider__item {}
+.slides__radio {
+	position: absolute;
+	visibility: hidden;
+}
 
-.item1 {}
+.element-body {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.5s ease;
+}
 
-.item2 {}
+.slider__img {
+	width: 100%;
+	height: 100%;
+}
 
-.item3 {}
-
-.item4 {}
-
-.item5 {}
-
-.item6 {}
+.slider__title {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 2em;
+	text-align: center;
+	color: #334257;
+}
 
 .slider__navigation {
-	width: 45%;
+	width: 55%;
 	display: flex;
 	justify-content: space-evenly;
+	margin: 0 auto;
 	padding-top: 15px;
 }
 
-.slider__bar {
+.bar__wrapper {
+	width: 17%;
+	height: 30px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bar__btn {
 	display: block;
 	height: 10px;
-	width: 13%;
+	width: 100%;
 	background-color: #548CA8;
 	opacity: 0.7;
 	border-radius: 5px;
 	transition: all 0.2s ease;
 }
 
-.slider__bar:hover {
+
+
+.bar__wrapper:hover,
+.bar__wrapper:hover>.bar__btn {
 	transform: scale(1.2);
 	opacity: 0.9;
 	cursor: pointer;
 }
+
+
+/* ? move style */
+
+#btn1:checked~.item1 {
+	margin-left: 0;
+}
+
+#btn2:checked~.item1 {
+	margin-left: calc(-800px);
+}
+
+#btn3:checked~.item1 {
+	margin-left: calc(-800px*2);
+}
+
+#btn4:checked~.item1 {
+	margin-left: calc(-800px*3);
+}
+
+#btn5:checked~.item1 {
+	margin-left: calc(-800px*4);
+}
+
+#btn6:checked~.item1 {
+	margin-left: calc(-800px*5);
+}
+
+
+/* ? Footer */
 
 .footer {
 	width: 100%;
@@ -119,7 +182,6 @@
 	opacity: 0.8;
 	border-radius: 15px 15px 0 0;
 }
-
 
 .footer__info {}
 
