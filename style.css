@@ -57,6 +57,11 @@
 	height: 80%;
 }
 
+.radio-btn {
+	position: absolute;
+	visibility: hidden;
+}
+
 .container-main {
 	display: flex;
 	align-items: center;
@@ -75,31 +80,19 @@
 	justify-content: space-between;
 }
 
-.slides {
+.clear-floating {
+	clear: both;
+}
+
+.slider__items {
 	width: 600%;
-	height: 90%;
-	border-radius: 10px;
-	display: flex;
 }
 
-.slides__radio {
-	position: absolute;
-	visibility: hidden;
+.slide-content {
+	float: left;
 }
 
-.element-body {
-	width: 800px;
-	display: flex;
-	flex-direction: column;
-	transition: all 0.5s ease;
-}
-
-.slider__img {
-	width: 100%;
-	height: 100%;
-}
-
-.slider__title {
+.slide-title {
 	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.3em;
@@ -109,66 +102,74 @@
 	color: #334257;
 }
 
-.slider__navigation {
-	width: 55%;
-	display: flex;
-	justify-content: space-evenly;
-	margin: 0 auto;
-	padding-top: 15px;
-}
 
-.bar__wrapper {
-	width: 17%;
-	height: 30px;
-	padding: 0 10px;
-	display: flex;
+
+/* ? label and button */
+
+.label-clickable {
+	display: inline-block;
+	margin-top: 10px;
+
+	width: 6rem;
+	height: 35px;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.bar__btn {
-	display: block;
-	height: 10px;
-	width: 100%;
-	background-color: #548CA8;
-	opacity: 0.6;
-	border-radius: 5px;
-	transition: all 0.2s ease;
-}
-
-
-.bar__wrapper:hover,
-.bar__wrapper:hover>.bar__btn {
-	transform: scaleX(1.15);
-	opacity: 0.9;
 	cursor: pointer;
 }
 
+.label-clickable[for="btn-1"] {
+	margin-left: 100px;
+}
+
+.label-clickable:hover>div {
+	background-color: inherit;
+	border: 1px solid #548CA8;
+	opacity: 0.8;
+	box-shadow: 0px 0px 5px 2px #548CA8;
+}
+
+.label-visible {
+	width: 65%;
+	height: 25%;
+	background-color: #548CA8;
+	border-radius: 10px;
+	opacity: 0.6;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+
+#btn-1:checked~label>#for-btn-1 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
+#btn-2:checked~label>#for-btn-2 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
+#btn-3:checked~label>#for-btn-3 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
+#btn-4:checked~label>#for-btn-4 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
+#btn-5:checked~label>#for-btn-5 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
+#btn-6:checked~label>#for-btn-6 {
+	background-color: #334257;
+	opacity: 0.8;
+}
+
 /* ? move style */
-
-#btn1:checked~.item1 {
-	margin-left: 0;
-}
-
-#btn2:checked~.item1 {
-	margin-left: calc(-800px);
-}
-
-#btn3:checked~.item1 {
-	margin-left: calc(-800px*2);
-}
-
-#btn4:checked~.item1 {
-	margin-left: calc(-800px*3);
-}
-
-#btn5:checked~.item1 {
-	margin-left: calc(-800px*4);
-}
-
-#btn6:checked~.item1 {
-	margin-left: calc(-800px*5);
-}
 
 
 /* ? Footer */
